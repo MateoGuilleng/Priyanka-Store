@@ -16,8 +16,9 @@
     <meta property="og:description" content="Descubre ropa vintage, trendy y sostenible con hasta 70% de descuento.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://priyanka.col">
-    <meta property="og:image" content="img/logo-social.jpg">
-
+    <meta property="og:image" content="img/banner.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;700&display=swap"
         rel="stylesheet">
@@ -27,108 +28,116 @@
 
 <body>
 
-    <header>
-        <div class="logo-container">
-            <img src="img/logo.jpeg" alt="Priyanka Store Logo" class="main-logo">
-        </div>
-        <h1>Priyanka Store</h1>
-        <p class="tagline"><strong>Moda independiente:</strong> Vintage, trendy, classic y upcycling en Bogotá</p>
-
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre nosotros</a></li>
-                <li><a href="#oferta">Qué ofrecemos</a></li>
-                <li><a href="#ubicacion">Ubicación</a></li>
-                <li><a href="#horario">Horario</a></li>
-                <li><a href="#redes">Redes</a></li>
+    <header class="main-header">
+        <nav class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#sobre">Nosotros</a></li>
+                <li><a href="#oferta">Descubre</a></li>
+                <li><a href="#ubicacion">Visítanos</a></li>
             </ul>
+
+            <a href="#" class="logo-link">
+                <img src="img/logo.jpeg" alt="Priyanka Store Logo" class="nav-logo">
+            </a>
         </nav>
     </header>
 
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Priyanka Store</h1>
+            <p class="hero-tagline">Moda independiente, sostenible y única en Bogotá</p>
+            <a href="#oferta" class="btn-primary">Explorar Colección</a>
+        </div>
+    </section>
 
     <main>
 
         <section id="sobre">
             <article class="content-flex">
                 <div class="text">
-                    <h2>Tienda de ropa vintage en Bogotá</h2>
+                    <h2>Tu Cita con lo Vintage</h2>
                     <p>
-                        En <strong>Priyanka Store</strong> ofrecemos una curaduría única de ropa vintage,
-                        prendas modernas y moda sostenible en Chapinero, Bogotá.
-                        Nuestro enfoque combina estilo, exclusividad y upcycling.
+                        En el corazón de **Chapinero**, ofrecemos una curaduría exclusiva que fusiona el pasado y el
+                        presente. Encuentra tesoros vintage, las últimas tendencias y piezas de **upcycling** que
+                        cuentan una historia. Creemos en la moda con identidad y conciencia ambiental.
                     </p>
                 </div>
                 <div class="image-box">
-                    <img src="img/vintage-shop.jpeg" alt="Interior de la tienda Priyanka Store">
+                    <img src="img/vintage-shop.jpeg" alt="Interior curado de Priyanka Store">
                 </div>
             </article>
         </section>
 
         <section id="oferta">
-            <h2>¿Qué encontrarás en nuestra tienda?</h2>
+            <div class="section-header text-center">
+                <h2>El Drop de esta Semana</h2>
+                <p>Marcas icónicas, tesoros ocultos y descuentos imperdibles.</p>
+            </div>
 
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="img/promo-70.jpeg" alt="Ropa de marca con 70% de descuento">
-                    <span>Supermarcas -70%</span>
+                    <div class="item-overlay">
+                        <span>Supermarcas -70%</span>
+                    </div>
                 </div>
                 <div class="gallery-item">
                     <img src="img/new-arrival.jpeg" alt="Ropa nueva en perfecto estado">
-                    <span>Nuevas colecciones</span>
+                    <div class="item-overlay">
+                        <span>New Arrivals</span>
+                    </div>
                 </div>
                 <div class="gallery-item">
                     <img src="img/upcycling.jpeg" alt="Moda sostenible y Upcycling">
-                    <span>Upcycling & Sostenibilidad</span>
+                    <div class="item-overlay">
+                        <span>Upcycling Line</span>
+                    </div>
                 </div>
             </div>
-
-            <ul class="feature-list">
-                <li>Prendas de supermarcas con más del 70% de descuento</li>
-                <li>Ropa nueva y en perfecto estado</li>
-                <li>Pop-Up de marcas independientes</li>
-                <li>Moda sostenible y curaduría exclusiva</li>
-            </ul>
         </section>
 
         <section id="ubicacion">
             <div class="content-flex inverse">
-                <div class="image-box">
+                <div class="image-box fachada">
                     <img src="img/fachada-chapinero.jpeg" alt="Ubicación Priyanka Store Chapinero">
                 </div>
                 <div class="text">
-                    <h2>Ubicación - Chapinero Bogotá</h2>
+                    <h2>Encuéntranos en Chapinero</h2>
                     <p>
-                        Llegar es facilísimo. Si estás en la Carrera 7ª cerca de la Universidad Javeriana,
-                        en solo 1 cuadra encuentras nuestro local.
+                        Llegar es muy fácil. Estamos a solo una cuadra de la **Carrera 7ª**, muy cerca de la Universidad
+                        Javeriana. Vive la experiencia Priyanka en persona.
                     </p>
 
-                    <address>
-                        <p><strong>Dirección:</strong> <br> Carrera 8 #41-38, Chapinero, Bogotá, Colombia</p>
+                    <address class="address-box">
+                        <p><strong>Dirección:</strong> <br> Carrera 8 #41-38<br> Bogotá, Colombia</p>
                     </address>
                 </div>
             </div>
         </section>
 
-        <section id="horario" class="text-center">
-            <h2>Horario de atención</h2>
-            <p class="highlight-box">Abierto todos los días de 12:00 p.m. a 8:00 p.m. (jornada continua)</p>
+        <section id="horario" class="text-center minimal-card">
+            <h2>Horario</h2>
+            <p class="highlight-time">Abierto todos los días <br> <strong>12:00 p.m. – 8:00 p.m.</strong> <br>
+                <small>(Jornada continua)</small>
+            </p>
         </section>
 
-        <section id="redes" class="text-center">
-            <h2>Síguenos en redes sociales</h2>
+        <section id="redes" class="text-center minimal-card">
+            <h2>Comunidad Priyanka</h2>
             <p>
-                Síguenos en Instagram para enterarte de eventos de trueque, descuentos y novedades:
+                Únete a nuestra comunidad en Instagram. Entérate antes que nadie de eventos de trueque, nuevos drops y
+                descuentos flash.
             </p>
             <a href="https://instagram.com/priyanka.col" class="btn-instagram" target="_blank"
                 rel="noopener noreferrer">
-                @priyanka.col
+                Síguenos @priyanka.col
             </a>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Priyanka Store | Bogotá, Colombia</p>
+    <footer class="main-footer">
+        <p>&copy; 2026 Priyanka Store | Bogotá | Estilo Sostenible</p>
     </footer>
 
 </body>
