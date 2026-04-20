@@ -1,0 +1,144 @@
+// Variables de estilo
+$primary-color: #6d4c41; // Café vintage
+$accent-color: #d4a373; // Arena/Dorado
+$bg-color: #fefae0; // Crema suave
+$text-dark: #283618; // Verde bosque oscuro
+$font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Mixin para Flexbox centralizado
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Estilos Globales
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-main;
+    background-color: $bg-color;
+    color: $text-dark;
+    line-height: 1.6;
+}
+
+// Header y Navegación
+header {
+    background-color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 3px solid $accent-color;
+
+    .main-logo {
+        max-width: 150px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    nav {
+        margin-top: 1.5rem;
+
+        ul {
+            padding: 0;
+            list-style: none;
+            @include flex-center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            li a {
+                text-decoration: none;
+                color: $text-dark;
+                font-weight: bold;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
+
+// Secciones del Main
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    section {
+        margin-bottom: 4rem;
+        padding: 1rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+        color: $primary-color;
+        border-left: 5px solid $accent-color;
+        padding-left: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+// Estilos específicos para la Galería y Contenido
+.content-flex {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .text {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .image-box img {
+        width: 100%;
+        border-radius: 12px;
+        filter: sepia(20%);
+    }
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 1.5rem;
+
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+
+// Footer
+footer {
+    background-color: $text-dark;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+// Media Query para móviles
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
